@@ -1,9 +1,13 @@
 {
   "packageManager": "yarn@4.6.0",
   "devDependencies": {
+    "@types/react": "^19.0.7",
+    "@types/react-dom": "^19.0.3",
     "typescript": "^5.7.3"
   },
   "dependencies": {
-    "@yarnpkg/plugin-typescript": "^4.1.1"
+    "@yarnpkg/plugin-typescript": "^4.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   }
 }
