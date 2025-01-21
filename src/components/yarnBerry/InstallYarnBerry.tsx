@@ -125,7 +125,7 @@ const Container = newStyled.div`
   padding: 2rem;
 `;
 
-const Title = newStyled.h3``;
+const Title = newStyled.h2``;
 
 const Box = newStyled.div`
   color: rgba(55, 53, 47, 0.65);

@@ -3,6 +3,7 @@ import InstallReactPackage from "./components/react/InstallReactPackage";
 import RotatingHeart from "./public/asset/RotatingHeart";
 import InstallYarnBerry from "./components/yarnBerry/InstallYarnBerry";
 import InstallBabel from "./components/babel/InstallBabel";
+import InstallWebpack from "./components/webpack/InstallWebpack";
 
 const App = () => {
   return (
@@ -17,6 +18,7 @@ const App = () => {
       <InstallReactPackage />
       <InstallYarnBerry />
       <InstallBabel />
+      <InstallWebpack />
     </>
   );
 };
