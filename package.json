@@ -1,10 +1,16 @@
 {
+  "scripts": {
+    "start": "webpack serve --mode=development&open 'http://localhost:3000'",
+    "build": "webpack --mode=production"
+  },
   "packageManager": "yarn@4.6.0",
   "devDependencies": {
     "@babel/core": "^7.26.0",
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.26.3",
     "@babel/preset-typescript": "^7.26.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
     "@types/react": "^19.0.7",
     "@types/react-dom": "^19.0.3",
     "babel-loader": "^9.2.1",
