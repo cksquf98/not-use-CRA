@@ -28,6 +28,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "./src/public/index.html", // 번들링한 css, js 파일이 src/public에 있는 index.html 파일에 link태그, scripts태그로 추가됨
     }),
+    new ForkTsCheckerWebpackPlugin(), // 타입스크립트 타입 자체 체크 플러그인
   ],
   devServer: {
     host: "localhost",
