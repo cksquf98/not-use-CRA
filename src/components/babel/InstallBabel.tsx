@@ -40,7 +40,7 @@ const InstallBabel = () => {
       <Title>Babel 설치</Title>
       <img
         src="https://blog.kakaocdn.net/dn/rDmaH/btrBSOi63cu/wCyoOG3nTpX1i9ogwyiOTK/img.jpg"
-        width={800}
+        width={750}
         height={500}
         alt="image.png"
       />
@@ -77,7 +77,7 @@ const Container = newStyled.div`
 
 export default InstallBabel;
 
-const Title = newStyled.h3``;
+const Title = newStyled.h2``;
 
 const Box = newStyled.div`
   color: rgba(55, 53, 47, 0.65);
