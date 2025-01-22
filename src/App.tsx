@@ -26,7 +26,7 @@ const App = () => {
 export default App;
 
 const Title = styled.h1`
-  color: rgb(0, 255, 255);
+  /* color: rgb(0, 255, 255); */
 `;
 
 const Flex = styled.div`
@@ -35,5 +35,5 @@ const Flex = styled.div`
   justify-content: center;
   gap: 0.1rem;
   padding: 1rem;
-  background-color: black;
+  /* background-color: black; */
 `;
