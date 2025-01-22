@@ -65,7 +65,7 @@ const InstallWebpack = () => {
         <ReactMarkdown>{code1}</ReactMarkdown>
       </Box>
       <ul>
-        <li>webpack : 번들 작업을 하는 webpack 패키지 </li>
+        <li>webpack : 번들 작업을 하는 webpack 패키지 </li>
         <li>webpack-cli : 웹팩 터미널 도구</li>
         <li>webpack-dev-server : 빠른 실시간 리로드 기능을 갖춘 개발 서버</li>
         <li>
@@ -75,7 +75,7 @@ const InstallWebpack = () => {
       </ul>
 
       <br />
-      <strong>webpack.config.js 파일 작성</strong>
+      <strong>webpack.config.js파일 작성</strong>
       <ul>
         <li>
           export : webpack.config.js 파일을 어디에선가 require() 메소드로 끌어다
@@ -85,10 +85,7 @@ const InstallWebpack = () => {
         <li>output : 하나의 파일로 번들링한 결과물을 설정하는 단계</li>
       </ul>
       <Box>
-        <Pre
-        >
-          {code2}
-        </Pre>
+        <Pre>{code2}</Pre>
       </Box>
     </Container>
   );

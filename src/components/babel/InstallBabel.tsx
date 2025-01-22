@@ -1,5 +1,5 @@
-import newStyled from "@emotion/styled";
-import ReactMarkdown from "react-markdown";
+import newStyled from '@emotion/styled';
+import ReactMarkdown from 'react-markdown';
 
 const markdownText = `
 바벨이 IE때문에 구버전 JS로 변환하려고 설치하는건데 IE는 지원종료된지 꽤나 되었기 때문에,,
@@ -28,13 +28,7 @@ import React from 'react’를 작성할 필요가 없어졌는데 요거는 바
 또 runtime을 automatic으로 하면 jsx가 호출되고, classic으로 하면 React.createElement가 호출된다고 합니닷
 `;
 
-
-
-
-
-
 const InstallBabel = () => {
-
   return (
     <Container>
       <Title>Babel 설치</Title>
@@ -65,9 +59,11 @@ const InstallBabel = () => {
         </li>
         <li>babel-loader: 웹팩에서 babel을 loader로 사용할 수 있도록 해줌</li>
       </ul>
-        <br />
+      <br />
       <ReactMarkdown>{markdownFileText}</ReactMarkdown>
-      <Box><ReactMarkdown>{code2}</ReactMarkdown></Box>
+      <Box>
+        <ReactMarkdown>{code2}</ReactMarkdown>
+      </Box>
     </Container>
   );
 };

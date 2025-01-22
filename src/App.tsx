@@ -1,9 +1,9 @@
-import styled from "@emotion/styled";
-import InstallReactPackage from "./components/react/InstallReactPackage";
-import RotatingHeart from "./public/asset/RotatingHeart";
-import InstallYarnBerry from "./components/yarnBerry/InstallYarnBerry";
-import InstallBabel from "./components/babel/InstallBabel";
-import InstallWebpack from "./components/webpack/InstallWebpack";
+import styled from '@emotion/styled';
+import InstallReactPackage from './components/react/InstallReactPackage';
+import RotatingHeart from '../public/asset/RotatingHeart';
+import InstallYarnBerry from './components/yarnBerry/InstallYarnBerry';
+import InstallBabel from './components/babel/InstallBabel';
+import InstallWebpack from './components/webpack/InstallWebpack';
 
 const App = () => {
   return (
@@ -25,9 +25,7 @@ const App = () => {
 
 export default App;
 
-const Title = styled.h1`
-  /* color: rgb(0, 255, 255); */
-`;
+const Title = styled.h1``;
 
 const Flex = styled.div`
   display: flex;
