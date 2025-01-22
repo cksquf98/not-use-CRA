@@ -10,6 +10,8 @@ yarn add -D @types/react @types/react-dom
 yarn add -D typescript
 ```
 
+<br />
+
 ### 패키지매니저 - yarn berry
 
 왜 yarn berry를 선택했냐!
@@ -77,6 +79,8 @@ VSCode Extension **ZipFS**가 설치되어있어야 함
 !.yarn/versions
 ```
 
+<br />
+
 ### Babel 설치
 
 바벨이 IE때문에 구버전 JS로 변환하려고 설치하는건데 IE는 지원종료된지 꽤나 되었기 때문에,, 
@@ -95,6 +99,8 @@ yarn add -D @babel/core @babel/preset-env @babel/preset-react @babel/preset-type
 - @babel/preset-react : 리액트의 JSX코드를 createElement 함수를 이용한 코드로 변환해줍니다.
 - @babel/preset-typescript: 타입스크립트를 자바스크립트로 컴파일 해주는 프리셋
 - babel-loader: 웹팩에서 babel을 loader로 사용할 수 있도록 해줌
+
+<br />
 
 **루트에 `babel.config.js` 작성**
 
@@ -116,6 +122,8 @@ module.exports = {
 
 [](https://babeljs.io/docs/babel-preset-react#react-automatic-runtime)
 
+<br />
+
 ### Webpack 설치
 
 초반에는 Parcel을 써볼까 고민했지만 !! 나는 바벨+웹팩 정석 루틴대로 간닷
@@ -129,6 +137,8 @@ yarn add -D html-webpack-plugin
 - webpack-cli : 웹팩 터미널 도구
 - webpack-dev-server : 빠른 실시간 리로드 기능을 갖춘 개발 서버
 - html-webpack-plugin : webpack 번들을 제공하는 HTML 파일 생성을 단순화해줌
+
+<br />
 
 **`webpack.config.js` 파일 작성**
 
@@ -183,6 +193,8 @@ module.exports = {
 
 ```
 
+<br />
+
 ### package.json에 script 추가
 
 ```
@@ -191,6 +203,8 @@ module.exports = {
     "build": "webpack --mode=production"
   },
 ```
+
+<br />
 
 ### index.tsx / App.tsx 추가
 
@@ -226,7 +240,7 @@ const App = () => {
 export default App;
 ```
 
-src/public 폴더를 만들고 하위에 index.html 파일 추가해주기!
+public 폴더를 만들고 하위에 index.html 파일 추가해주기!
 
 ```jsx
 <!DOCTYPE html>
@@ -242,7 +256,42 @@ src/public 폴더를 만들고 하위에 index.html 파일 추가해주기!
 </html>
 ```
 
-추가적으로 타입 체크를 위한 **ForkTsCheckerWebpackPlugin,** emotion, prettier를 설치해주었습니다!
+<br />
+
+### **ForkTsCheckerWebpackPlugin, 이모션 설치**
+
+추가적으로 타입 체크를 위한 **ForkTsCheckerWebpackPlugin,** emotion을 설치해주었습니다!
+
+```jsx
+//webpack.config.js 수정
+
+const ForkTsCheckerWebpackPlugin = require('fork-ts-checker-webpack-plugin'); //추가
+
+//plugins에 추가
+new ForkTsCheckerWebpackPlugin(), // 타입스크립트 타입 자체 체크 플러그인
+```
+
+eslint 깔았더니 골아파서 적용 안함 ㅎ;;
+
+그리고 노션 바로 옮기고 싶어서 ReactMarkdown을 깔아봤는데 흠.. 딱히 편한 점은 없다~!
+
+나는 스타일도 적용하고 싶어가지고 별 이득이 없었던
+
+마크다운 코드용 상수를 따로 폴더에 모아두면 좀 깔끔할랑가
+
+<br />
+
+### 배포
+
+vercel을 이용해서 배포,,
+
+<img width="693" alt="image" src="https://github.com/user-attachments/assets/b9fc7bd7-7644-4201-aeaf-92f0d2468850" />
+
+
+
+
+
+<br />
 
 ### 참고자료
 
