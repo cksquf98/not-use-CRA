@@ -1,9 +1,10 @@
-import styled from '@emotion/styled';
-import InstallReactPackage from './components/react/InstallReactPackage';
-import RotatingHeart from '../public/asset/RotatingHeart';
-import InstallYarnBerry from './components/yarnBerry/InstallYarnBerry';
-import InstallBabel from './components/babel/InstallBabel';
-import InstallWebpack from './components/webpack/InstallWebpack';
+import styled from "@emotion/styled";
+import InstallReactPackage from "./components/react/InstallReactPackage";
+import RotatingHeart from "../public/asset/RotatingHeart";
+import InstallYarnBerry from "./components/yarnBerry/InstallYarnBerry";
+import InstallBabel from "./components/babel/InstallBabel";
+import InstallWebpack from "./components/webpack/InstallWebpack";
+import DeployVercel from "./components/vercel/DeployVercel";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <InstallYarnBerry />
       <InstallBabel />
       <InstallWebpack />
+      <DeployVercel />
     </>
   );
 };
