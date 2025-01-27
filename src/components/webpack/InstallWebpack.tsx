@@ -1,58 +1,6 @@
 import newStyled from "@emotion/styled";
 import ReactMarkdown from "react-markdown";
-
-const code1 = `
-yarn add -D webpack webpack-cli webpack-dev-server
-
-yarn add -D html-webpack-plugin
-`;
-
-const code2 = `
-// webpack.config.js
-
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const path = require("path");
-
-module.exports = {
-  module: {
-    rules: [
-      {
-        // Match js, jsx, ts & tsx files
-        test: /\.[jt]sx?$/, // 해당 확장자로 끝나면 babel-loader가 처리
-        exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            cacheDirectory: true, // rebuild 시, 캐시에서 읽어서 바벨의 리트랜스파일링을 방지
-          },
-        },
-      },
-    ],
-  },
-  mode: "none", // none, production, development
-  entry: "./src/index.tsx", // 번들링 시작점 파일
-  output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "bundle.js",
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: "./src/public/index.html", // 번들링한 css, js 파일이 src/public에 있는 index.html 파일에 link태그, scripts태그로 추가됨
-    }),
-  ],
-  devServer: {
-    host: "localhost",
-    port: 3000,
-    static: path.resolve(__dirname, "dist"),
-    historyApiFallback: true, // 404페이지 대신 index.html로 이동
-    hot: true, // 모듈 전체를 다시 로드하지 않고 변경사항만 갱신
-  },
-  resolve: {
-    // import 시 확장자 생략 가능, 번들링할 파일 설정
-    extensions: [".js", ".jsx", ".ts", ".tsx"],
-  },
-};
-`;
+import { INSTALL_CODE_1, INSTALL_CODE_2 } from "./markdown";
 
 const InstallWebpack = () => {
   return (
@@ -62,7 +10,7 @@ const InstallWebpack = () => {
         초반에는 Parcel을 써볼까 고민했지만 !! 나는 바벨+웹팩 정석 루틴대로 간닷
       </p>
       <Box>
-        <ReactMarkdown>{code1}</ReactMarkdown>
+        <ReactMarkdown>{INSTALL_CODE_1}</ReactMarkdown>
       </Box>
       <ul>
         <li>webpack : 번들 작업을 하는 webpack 패키지 </li>
@@ -85,8 +33,9 @@ const InstallWebpack = () => {
         <li>output : 하나의 파일로 번들링한 결과물을 설정하는 단계</li>
       </ul>
       <Box>
-        <Pre>{code2}</Pre>
+        <Pre>{INSTALL_CODE_2}</Pre>
       </Box>
+      <br />
     </Container>
   );
 };
