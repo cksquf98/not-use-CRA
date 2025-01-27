@@ -1,10 +1,15 @@
 import styled from "@emotion/styled";
-import InstallReactPackage from "./components/react/InstallReactPackage";
 import RotatingHeart from "../public/asset/RotatingHeart";
-import InstallYarnBerry from "./components/yarnBerry/InstallYarnBerry";
-import InstallBabel from "./components/babel/InstallBabel";
+import {
+  PackageJsonScript,
+  PluginAndEmotion,
+  TSXFile,
+} from "./components/additional";
+import { InstallBabel } from "./components/babel";
+import InstallReactPackage from "./components/react/InstallReactPackage";
+import { InstallYarnBerry } from "./components/yarnBerry";
 import InstallWebpack from "./components/webpack/InstallWebpack";
-import DeployVercel from "./components/vercel/DeployVercel";
+import { DeployVercel } from "./components/vercel";
 
 const App = () => {
   return (
@@ -20,6 +25,9 @@ const App = () => {
       <InstallYarnBerry />
       <InstallBabel />
       <InstallWebpack />
+      <PackageJsonScript />
+      <TSXFile />
+      <PluginAndEmotion />
       <DeployVercel />
     </>
   );

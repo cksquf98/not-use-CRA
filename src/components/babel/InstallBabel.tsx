@@ -6,8 +6,11 @@ import {
   INSTALL_CODE_2,
   INTRO_TEXT,
 } from "./markdown";
+import { Box } from "../common/Box";
+import { Title } from "../common/Title";
+import { Container } from "../common/Container";
 
-const InstallBabel = () => {
+export const InstallBabel = () => {
   return (
     <Container>
       <Title>Babel 설치</Title>
@@ -46,17 +49,3 @@ const InstallBabel = () => {
     </Container>
   );
 };
-const Container = newStyled.div`
-  padding: 2rem;
-`;
-
-export default InstallBabel;
-
-const Title = newStyled.h2``;
-
-const Box = newStyled.div`
-  color: rgba(55, 53, 47, 0.65);
-  background-color: rgba(247, 246, 243);
-  font-size: 16px;
-  padding: 1rem;
-`;

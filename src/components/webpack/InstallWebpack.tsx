@@ -1,6 +1,7 @@
 import newStyled from "@emotion/styled";
 import ReactMarkdown from "react-markdown";
 import { INSTALL_CODE_1, INSTALL_CODE_2 } from "./markdown";
+import { Box, Container, Pre, Title } from "../common";
 
 const InstallWebpack = () => {
   return (
@@ -41,25 +42,3 @@ const InstallWebpack = () => {
 };
 
 export default InstallWebpack;
-
-const Container = newStyled.div`
-  padding: 2rem;
-`;
-
-const Title = newStyled.h2``;
-
-const Box = newStyled.div`
-  color: rgba(55, 53, 47, 0.65);
-  background-color: rgba(247, 246, 243);
-  font-size: 16px;
-  padding: 1rem;
-  white-space: pre-wrap; /* 줄바꿈 허용 */
-`;
-
-const Pre = newStyled.pre`
-  white-space: pre-wrap;
-  background-color: #f4f4f4;
-  padding: 1rem;
-  border-radius: 5px;
-  overflow-x: auto;
-`;

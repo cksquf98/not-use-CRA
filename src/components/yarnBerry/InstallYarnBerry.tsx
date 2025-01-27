@@ -1,6 +1,6 @@
-import newStyled from "@emotion/styled";
+import { Box, Container, Title } from "../common";
 
-const InstallYarnBerry = () => {
+export const InstallYarnBerry = () => {
   return (
     <Container>
       <Title>패키지매니저 - yarn berry</Title>
@@ -120,16 +120,3 @@ const InstallYarnBerry = () => {
 };
 
 export default InstallYarnBerry;
-
-const Container = newStyled.div`
-  padding: 2rem;
-`;
-
-const Title = newStyled.h2``;
-
-const Box = newStyled.div`
-  color: rgba(55, 53, 47, 0.65);
-  background-color: rgba(247, 246, 243);
-  font-size: 16px;
-  padding: 1rem;
-`;

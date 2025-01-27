@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import { Box, Container, Title } from "../common";
 
 const InstallReactPackage = () => {
   return (
@@ -14,16 +14,3 @@ const InstallReactPackage = () => {
 };
 
 export default InstallReactPackage;
-
-const Container = styled.div`
-  padding: 2rem;
-`;
-
-const Title = styled.h2``;
-
-const Box = styled.div`
-  color: rgba(55, 53, 47, 0.65);
-  background-color: rgba(247, 246, 243);
-  font-size: 16px;
-  padding: 1rem;
-`;
