@@ -10,6 +10,7 @@ import InstallReactPackage from "./components/react/InstallReactPackage";
 import { InstallYarnBerry } from "./components/yarnBerry";
 import InstallWebpack from "./components/webpack/InstallWebpack";
 import { DeployVercel } from "./components/vercel";
+// import { Reference } from "./components/reference";
 
 const App = () => {
   return (
@@ -29,6 +30,7 @@ const App = () => {
       <TSXFile />
       <PluginAndEmotion />
       <DeployVercel />
+      {/* <Reference /> */}
     </>
   );
 };
